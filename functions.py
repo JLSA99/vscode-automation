@@ -19,3 +19,18 @@ def list_installed_extensions():
                             capture_output=True, text=True)
 
     print(result.stdout)
+
+def add(a, b):
+    """Returns the sum of a and b."""
+    return a + b
+
+def multiply(a, b):
+    """Returns the product of a and b."""
+    return a * b
+
+def divide(a, b):
+    """Returns a divided by b."""
+    if b == 0:
+        print("Error: you cannot divide by zero.")
+        return None
+    return a / b
